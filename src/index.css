@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(87, 87, 87);
+  font-size: large;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.App {
+  display: flex;
+  justify-content: center;
+}
+.todo_list_container {
+  /* border: 5px solid brown; */
+  text-align: center;
+  /* width: 600px; */
+  border-radius: 8px;
+}
+.todo_list_inner_container {
+  height: 600px;
+  /* overflow: scroll; */
+}
+.todo-list {
+  border: 1px solid rgb(105, 74, 243);
+  display: flex;
+  margin: 1px;
+  background-color: rgb(248, 241, 136);
+  border-radius: 10px;
+  position: relative;
+  width: 550px;
+  /* padding: 5px; */
+  margin: 10px;
+  /* box-shadow: 1px 1px 10px 1px rgb(247, 247, 247); */
+  box-sizing: border-box;
+}
+.todo_title {
+  border: 1px solid black;
+  width: 200px;
+  margin-left: 200px;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: rgb(150, 59, 235);
+  color: aliceblue;
+}
+.todo-list li {
+  list-style: none;
+  padding: 18px;
+  text-align: start;
+  font-weight: 600;
+}
+
+.completedTask {
+  text-decoration: line-through;
+  font-weight: 600;
+}
+
+.todo-list input {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+.addtoTask {
+  width: 550px;
+  height: 40px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding-left: 20px;
+}
+.edit-btn {
+  position: absolute;
+  right: 80px;
+  top: 20px;
+  height: 20px;
+  width: 20px;
+}
+.addtoTaskBtn {
+  height: 45px;
+  width: 45px;
+  /* font-size: larger;  */
+  position: relative;
+  top: 16px;
+  margin-left: 10px;
+  border-radius: 25px;
+  background-color: antiquewhite;
+}
+
+.delete-btn {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  height: 20px;
+  width: 20px;
+}
+.clear-btn {
+  height: 47px;
+  width: 47px;
+  position: relative;
+  top: 16px;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.checkbox {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 20px;
+  right: 50px;
+}
+
+/* Scroll Bar */
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 1);
+  outline: 1px solid slategrey;
+}
